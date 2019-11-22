@@ -7,6 +7,7 @@ namespace PostBag
     {
         static void Main(string[] args)
         {
+
             Bag bag = new Bag();
             bag.Add(new Letter("Alice", "Bob"));
             bag.Add(new Letter("Charles", "Diane", true));
@@ -30,6 +31,9 @@ namespace PostBag
             {
                 Console.WriteLine(item);
             }
+            Console.ReadKey();
+
+
         }
     }
 }

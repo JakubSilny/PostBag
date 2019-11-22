@@ -6,20 +6,19 @@ namespace PostBag
 {
     abstract class Consignment
     {
-        protected int price;
+        protected int Price;
         protected string Recipient;
 
-        protected Consignment(global::System.Int32 price, global::System.String recipient)
+
+        protected Consignment(int price,string recipient)
         {
-            this.price = price;
+            Price = price;
             Recipient = recipient;
         }
 
-        public abstract ToString()
+        public override string ToString()
         {
-
+            return "> To:"+Recipient + " Price:" + Price;
         }
-
-
     }
 }
